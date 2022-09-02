@@ -10,7 +10,7 @@ body {
 }
 
 .all-tasks {
-    padding: 0.5em 2em;
+    padding: 0.5em 1em;
 }
 
 
@@ -103,6 +103,11 @@ form {
 .new.list {
     font-size: 1.1rem;
     font-weight: 300;
+    
+}
+
+.new.task {
+    max-width: 200px;
 }
 
 
@@ -114,7 +119,7 @@ form {
 .todo-list {
     background: rgb(242, 242, 242);
     color: rgb(42, 42, 42);
-    margin: 2em 2em;
+    margin: 1em 1em;
 
     --spacer: 2rem;
 }
@@ -146,7 +151,7 @@ form {
 }
 
 .todo-body {
-    padding: var(--spacer);
+    padding: 2rem;
     position: relative;
 }
 
@@ -272,5 +277,15 @@ form {
 
     .todo-list {
         margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .todo-body {
+        padding: 1rem 0.5rem;
+    }
+
+    .delete-btns {
+        bottom: -75px;
     }
 }
