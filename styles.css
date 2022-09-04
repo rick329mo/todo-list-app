@@ -1,8 +1,8 @@
 body {
-    background-color: #457B9D;
-    color: #fff;
+    background-color:#457B9D;
+    color: #e4e4e4;
     margin: 0;
-    font-weight: 300;
+    font-weight: 200;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.5rem;
@@ -116,10 +116,15 @@ form {
     letter-spacing: 1px;
 }
 
+
 .todo-list {
-    background: rgb(242, 242, 242);
+    background: #e4e4e4;
     color: rgb(42, 42, 42);
     margin: 2em 1em 3em 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border-radius: 8px; 
 
     --spacer: 2rem;
 }
@@ -134,11 +139,15 @@ form {
 }
 
 .todo-header {
-    background: #e4e4e4;
+    background: lightgray;
+    color: rgb(42, 42, 42);
     padding: var(--spacer);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .list-title {
@@ -237,6 +246,45 @@ form {
     bottom: -50px;
     color: #e4e4e4;
     margin-bottom: 1em;
+}
+
+.theme-picker {
+    margin-top: 3em;
+}
+
+.theme-selector {
+    width: 2em;
+    height: 2em;
+    margin-right: 1.4em;
+    margin-bottom: 0.5em;
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+.theme-selector:hover {
+    opacity: 0.7;
+}
+
+.theme-selector:active {
+    transform: scale(0.9);
+}
+
+.blue-theme {
+    background-color: #457B9D;
+}
+
+.red-theme {
+    background-color: #9e2a2b;
+}
+
+.green-theme {
+    background-color: #31572c;
+}
+
+.yellow-theme {
+    background-color: #ffb700;
 }
 
 
