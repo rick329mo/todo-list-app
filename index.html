@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="check-circle.svg">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
     <title>To-do List</title>
 </head>
 <body>
@@ -16,16 +17,17 @@
 
     <div class="all-tasks">
         <h2 class="all-tasks-title">My Lists</h2>
-        <ul class="task-list">
-            <li class="list-name active-list">Work</li>
+        <ul class="task-list" data-lists>
+            <!-- <li class="list-name active-list">Work</li>
             <li class="list-name">Study</li>
-            <li class="list-name">Grocery</li>
+            <li class="list-name">Grocery</li> -->
         </ul>
 
-        <form>
+        <form action="" data-new-list-form>
             <input 
             type="text" 
             class="new list" 
+            data-new-list-input
             placeholder="new list name"
             aria-label="new list name"
             />
