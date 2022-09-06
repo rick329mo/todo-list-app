@@ -287,6 +287,10 @@ form {
     background-color: #ffb700;
 }
 
+li {
+    cursor: pointer;
+}
+
 
 
 
